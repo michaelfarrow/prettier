@@ -1,11 +1,14 @@
 {
-  "name": "prettier",
+  "name": "@mikefarrow/prettier",
   "version": "3.6.2",
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "prettier": "3.6.2"
   },
   "exports": {
-    "./config": "./prettier.config.mjs"
+    "./config": {
+      "types": "./prettier.config.d.ts",
+      "default": "./prettier.config.mjs"
+    }
   }
 }
