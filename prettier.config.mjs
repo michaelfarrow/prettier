@@ -1,0 +1,41 @@
+/** @type {import('prettier').Config} */
+const config = {
+  /* Default config */
+  experimentalTernaries: false,
+  experimentalOperatorPosition: 'end',
+  printWidth: 80,
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
+  // singleQuote: false,
+  quoteProps: 'as-needed',
+  // jsxSingleQuote: false,
+  // trailingComma: "all",
+  bracketSpacing: true,
+  objectWrap: 'preserve',
+  bracketSameLine: false,
+  arrowParens: 'always',
+  requirePragma: false,
+  insertPragma: false,
+  proseWrap: 'preserve',
+  htmlWhitespaceSensitivity: 'css',
+  vueIndentScriptAndStyle: false,
+  endOfLine: 'lf',
+  embeddedLanguageFormatting: 'auto',
+  singleAttributePerLine: false,
+
+  /* Overrides */
+  singleQuote: true,
+  jsxSingleQuote: true,
+  trailingComma: 'es5',
+
+  /* Import order */
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
+  importOrderGroupNamespaceSpecifiers: false,
+
+  /* Plugins */
+  plugins: ['@ianvs/prettier-plugin-sort-imports'],
+};
+
+export default config;
